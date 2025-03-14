@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+    <section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/up-arrow.png" alt="up-arrow" height="35px"></button>
+        <div class="navbar">
+            <nav id="desktop-nav">
+            <div class="logo">Chaitali Patil</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#expertize">Expertise</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li>
+                        <button id="dark-mode-toggle" class="dark-mode-toggle">
+                            <img src="./assets/moon.png" alt="dark mode" id="dark-mode-icon" style="height: 25px; width: 25px; border: none;">
+                        </button>
+                    </li> -->
+                </ul>
+            </nav>
+            <nav id="hamburger-nav">
+                <div class="logo">Chaitali Patil</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#expertize" onclick="toggleMenu()">Expertise</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                        <!-- <li>
+                            <button id="mobile-dark-mode-toggle" class="dark-mode-toggle">
+                                <img src="./assets/moon.png" alt="dark mode" id="mobile-dark-mode-icon" style="height: 25px; width: 25px; border: none;">
+                            </button>
+                        </li> -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="profile">
+            <img src="assets/profilephoto.jpg" alt="profile-pic-1" data-aos="fade-right"
+            data-aos-duration="1000">
+            <div class="profile-text" data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1000">
+                <p class="text-1">Hello, I'm</p>
+                <h1 class="title">Chaitali Patil</h1>
+                <p class="role">Web Developer</p>
+                <p style="color: gray;" class="profile-info" >
+                    Web developer skilled in crafting responsive, user-focused websites with a growing full-stack expertise. Passionate about delivering seamless digital experiences.</p>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2" id="download-cv-btn"
+                        onclick="window.open('assets/CHAITALI_PATIL_RESUME.pdf', '_blank', 'noopener,noreferrer')"
+                    >
+                        Download CV
+                    </button>
+                        <button class="btn btn-color-1" onclick="location.href='#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" style="height: 40px; width: 40px; border: none;"
+                    onclick="location.href='https://www.linkedin.com/in/chaitali-patil-446561276/'"
+                    />
+                    <img src="./assets/github.png" alt="My Github profile" class="icon" style="height: 40px; width: 40px; border: none;"
+                    onclick="location.href='https://github.com/Chaitali1210'"/>
+                    <img src="./assets/icons8-instagram-48.png" alt="My Github profile" class="icon" style="height: 40px; width: 40px; border: none; border-radius: 0;"
+                    onclick="location.href='https://www.instagram.com/chaitali132/?next=%2F&hl=en'"/>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <!-- <p class="title-text">Get To Know More</p> -->
+            <div class="about-container">
+                <img src="./assets/profilphoto-2.jpg"
+                alt="Profile picture" height="500px" data-aos="flip-left">
+                <div class="about-details" data-aos="zoom-in">
+                    <h1 class="heading">About Me</h1>
+                    <h3 style="color: rgb(71, 71, 71);">Welcome to my portfolio!</h3>
+                    <p style="color: rgb(82, 82, 82); margin: .5rem; text-align: justify;">
+                        "I'm Chaitali Patil, a front-end developer with a passion for creating visually engaging, responsive designs that prioritize user experience. Currently advancing my skills in full-stack development, I am focused on mastering Python for back-end development to build seamless, robust web applications. Driven by a commitment to delivering high-quality digital experiences, I’m continuously enhancing my skill set to bridge the gap between front and back-end technologies. <br>
+                        In my portfolio, you'll find a showcase of project that highlight my skills in HTML, CSS & JavaScript."
+                    </p>
+                    <div class="experience-eduaction-details">
+                        <div class="details-container" id="experience">
+                            <img src="./assets/experience.png"
+                            alt="Experience icon"
+                            class="icon"/>
+                            <h3>Experience</h3>
+                            <p>Intern, 3+ months <br />Frontend Development</p>
+                        </div>
+                        <div class="details-container" id="education">
+                            <img src="./assets/education.png"
+                            alt="Education icon"
+                            class="icon"/>
+                            <h3>Education</h3>
+                            <p>Graduated From BSc.CS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="expertize">
+            <!-- <p class="title-text"> Explore My</p> -->
+            <h1 class="heading">Expertise</h1>
+            <div class="experience-container">
+                <h2 class="experience-sub-title">Web Development</h2>
+                <div class="skills-container">
+                    <article data-aos="zoom-out">
+                        <img src="./assets/icons8-html-logo-48.png"
+                        alt="Experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article data-aos="zoom-out">
+                        <img src="./assets/icons8-css3-48.png"
+                        alt="Experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article data-aos="zoom-out">
+                        <img src="./assets/icons8-tailwind-css-48.png"
+                        alt="Experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>Tailwind CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article data-aos="zoom-out">
+                        <img src="./assets/icons8-javascript-48.png"
+                        alt="Experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article data-aos="zoom-out">
+                        <img src="./assets/icons8-git-logo-48.png"
+                        alt="Experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>Git</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article data-aos="zoom-out">
+                        <img src="./assets/icons8-react-80.png"
+                        alt="Experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>React JS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article data-aos="zoom-out">
+                        <img src="./assets/icons8-python-48.png"
+                        alt="Experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>Python</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    
+                    <article data-aos="zoom-out">
+                        <img src="./assets/icons8-node-js-48.png"
+                        alt="Experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>Node Js</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article data-aos="zoom-out">
+                        <img src="./assets/icons8-express-js-50.png"
+                        alt="Experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>Express Js</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article data-aos="zoom-out">
+                        <img src="./assets/icons8-mongo-db-48.png"
+                        alt="Experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>MongoDB</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+
+            </div> 
+
+            <div class="technical-skills">
+                <p class="progress-exp-text"> With Industrial Experience in</p>
+                <h2>Technical Skills</h2>
+            </div>
+            <div class="progress-container">
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-label">HTML</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+            
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-label">CSS</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+            
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-label">JavaScript</span>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+                </div>
+            
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-label">Git</span>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="100"
+        data-aos-offset="0"
+        data-aos-duration="1200">
+            <!-- <p class="title-text"> Get in Touch</p> -->
+            <h1 class="heading">Contact Me</h1>
+            <div class="contact-container">
+                <div class="contact-info-container">
+                    <img
+                        src="./assets/email.png"
+                        alt="Email icon"
+                        class="icon contact-icon email-icon"
+                    />
+                    <p id="email" class="contact"><a href="mailto:chaitalipatil384@gmail.com">chaitalipatil384@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img
+                        src="./assets/linkedin.png"
+                        alt="LinkedIn icon"
+                        class="icon contact-icon"
+                        id="linkedin"
+                    />
+                    <p id="linkedin-text" class="contact"><a href="https://www.linkedin.com/in/chaitali-patil-446561276/">Chaitali Patil
+                    </a></p>
+                </div>
+            </div>
+            <form action="/action_page.php" target="_blank">
+                <div class="contact-section">
+                    <label>Name:</label>
+                    <input type="text" name="Name" required>
+                </div>
+                <div class="contact-section">
+                    <label>Email:</label>
+                    <input type="text" name="Email" required>
+                </div>
+                <div class="contact-section">
+                    <label>Message:</label>
+                    <input type="text" name="Message" required>
+                </div>
+                <button type="submit" class="submit-btn"><i class="fa fa-paper-plane w3-margin-right">&nbsp;</i>Send Message</button>
+            </form>
+        </div>
+        <footer>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" style="height: 25px; width: 25px; border: none;"
+                onclick="location.href='https://www.linkedin.com/in/chaitali-patil-446561276/'"
+                />
+                <img src="./assets/github.png" alt="My Github profile" class="icon" style="height: 25px; width: 25px; border: none;"
+                onclick="location.href='https://github.com/Chaitali1210'"/>
+                <img src="./assets/icons8-instagram-48.png" alt="My Github profile" class="icon" style="height: 25px; width: 25px; border: none; border-radius: 0;"
+                onclick="location.href='https://www.instagram.com/chaitali132/?next=%2F&hl=en'"/>
+            </div>
+        </footer>
+    </section>
+    <script src="portfolio.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500, 
+            once: false,
+            offset: 100 
+        });
+    </script>
+    
+</body>
+</html>
